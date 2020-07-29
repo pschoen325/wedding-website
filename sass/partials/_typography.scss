@@ -1,11 +1,22 @@
 // Typography partial
 @import "partials/colors";
 
+@font-face {
+  font-family: 'Bernaillo';
+    src: url('../fonts/Bernaillo.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Bernaillo.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/Bernaillo.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/Bernaillo.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/Bernaillo.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 400;
+    font-style: normal;
+}
+
 // Fonts
 
 $sans-serif: 'Open Sans', sans-serif;
 $serif: Merriweather, Georgia, 'Times New Roman', serif;
-$accent-font: 'Nunito', sans-serif;
+$accent-font: 'Bernaillo', sans-serif;
 
 // Weights
 
@@ -16,7 +27,7 @@ $bold: 700;
 
 // Sizes
 
-$font-size-h1: 60px;
+$font-size-h1: 72px;
 $font-size-h2: 40px;
 $font-size-h3: 24px;
 $font-size-h4: 18px;
@@ -57,11 +68,12 @@ h2 {
 
 h3 {
   color: $h3-color;
-  font-size: $font-size-h4;
+  font-size: $font-size-h2;
   font-weight: $bold;
-  text-transform: uppercase;
-  letter-spacing: 3px;
   line-height: $base-line-height;
+  font-family: $accent-font;
+  text-transform: capitalize;
+  margin-bottom: 1em;
 }
 
 h4 {

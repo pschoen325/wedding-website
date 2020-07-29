@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+
 // Imports
 //@import "compass";
 @import "partials/typography";
@@ -269,6 +270,7 @@ Hero
   }
   h1 {
     color: $txt-light;
+    font-family: $accent-font;
     margin-bottom: 40px;
   }
   p.intro {
@@ -290,10 +292,11 @@ Hero
   position: fixed;
   width: 100%;
   z-index: 999;
+  background-color: rgba(0, 0, 0, 1);
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, .88);
+  background-color: rgba(0, 0, 0, .5);
   z-index: 999;
   width: 100%;
 }
@@ -318,7 +321,7 @@ header {
     display: inline-block;
   }
   .logo img {
-    height: 19px;
+    height: 40px;
   }
   ul.primary-nav {
     margin: 0 0 0 75px;
@@ -422,6 +425,7 @@ Features-stack
   }
   h3 {
     margin: 0 0 20px 0;
+    font-family: $accent-font;
   }
   span.icon {
     font-size: 35px;
@@ -645,11 +649,14 @@ Features-stack
 }
 
 /* ==========================================================================
-Instagram
+Registry
 ========================================================================== */
-#instagram {
+#registry {
   img {
     width: 100%;
+  }
+  .registry-btn {
+    margin-bottom: 1em;
   }
 }
 
@@ -750,12 +757,12 @@ Embed video
 Google map
 ========================================================================== */
 #map-canvas {
-  height: 500px;
+  height: 650px;
   width: 100%;
 }
 #map-content-wrapper {
   position: relative;
-  margin-top: -502px;
+  margin-top: -610px;
   margin-bottom: 150px;
 }
 #map-content {
